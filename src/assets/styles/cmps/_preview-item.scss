@@ -1,0 +1,105 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.preview {
+  position: relative;
+  max-width: 100%;
+  cursor: pointer;
+
+  // ------- el-carousel
+
+  .el-carousel__button {
+    height: 6px;
+    width: 6px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+
+  .el-carousel__arrow {
+    background-color: rgba(255, 255, 255, 0.801);
+    color: $clr1;
+    font-size: 20px;
+
+    &:hover {
+      box-shadow: 0 0 3px 1px #ffffff;
+      background-color: white;
+      color: black;
+    }
+  }
+
+  span.material-icons-outlined {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+
+  .like {
+    color: rgb(49 16 16 / 41%);
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    top: 16px;
+    /* font-size: 10px; */
+  }
+
+  .el-carousel {
+    border-radius: 12px;
+  }
+
+  .img-wrapper {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .preview-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 6px;
+    padding-block-start: 12px;
+    font-size: 15px;
+    line-height: 19px;
+
+    .name-bed {
+      color: $clr7;
+    }
+  }
+
+  .favorite {
+    transition: all 700ms ease-out;
+  }
+
+  .favorite.active {
+    color: $clr2;
+    -webkit-text-stroke-width: 0px;
+    transition: all 200ms ease-out;
+  }
+
+  .location-info {
+    font-size: 15px;
+    font-family: 'Cereal-medium', Arial, sans-serif;
+  }
+
+  .location-info .stared {
+    font-family: 'Cereal', Arial, sans-serif;
+
+  }
+
+
+  .gray {
+    color: $clr7;
+  }
+
+  .gray {
+    color: rgba(0, 0, 0, 0.4392156863);
+    font-size: 0.85em;
+  }
+}

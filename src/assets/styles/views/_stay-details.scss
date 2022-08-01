@@ -1,0 +1,851 @@
+.host-image {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.details-container {
+  max-width: 1120px;
+  width: 100%;
+  margin: auto;
+
+
+  .up-info.flex {
+    flex: 1;
+    align-items: center;
+
+    .left-side {
+      font-family: Cereal-medium;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .stared {
+      display: contents;
+    }
+
+    .dot {
+      font-size: 10px;
+    }
+
+    .right-info {
+      .margin20 {
+        margin-right: 14px;
+      }
+
+      button {
+        font-family: Cereal-medium !important;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px -8px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 8px;
+        padding: 8px;
+        border: none;
+        background: transparent;
+        text-decoration: underline;
+
+        &:hover {
+          background-color: #F7F7F7;
+          color: black;
+        }
+
+        span {
+          margin-right: 8px;
+          height: 16px;
+          width: 16px;
+        }
+
+        img {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 20px;
+  }
+
+  .main-title h1 {
+    font-family: "Cereal", Helvetica, sans-serif;
+  }
+
+
+
+  .content-wrapper {
+    h2 {
+      margin-bottom: 10px;
+      font-family: Cereal;
+    }
+
+    section.left-side {
+      flex-basis: 62%;
+
+      .box-padding {
+        padding-top: 48px;
+        padding-bottom: 24px;
+      }
+
+
+      .amenities {
+        max-width: fit-content;
+        width: 100%;
+        white-space: nowrap;
+        font-size: 16px;
+
+
+        li {
+          flex-basis: 40%;
+          padding: 6px 0;
+        }
+      }
+
+      .include {
+        gap: 5px;
+
+        .gray {
+          color: #717171;
+
+        }
+      }
+
+      .description {
+        padding-top: 32px;
+        padding-bottom: 48px;
+
+        h2 {
+          margin-bottom: 5px;
+        }
+
+        .aircover {
+          height: 30px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 16px;
+
+        }
+      }
+    }
+  }
+
+  .features-details {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    img {
+      height: 23px;
+      margin-right: 14px;
+    }
+
+    h5 {
+      margin: 5px 0px 26px 0px;
+      color: rgb(113, 113, 113);
+      font-size: 14px;
+      font-weight: 100;
+    }
+
+  }
+
+  .amenities-details {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .reviews-container {
+    padding-block: 48px;
+
+    .host-image {
+      height: 43px;
+      width: 43px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .stared {
+      gap: 10px;
+    }
+
+    h2 {
+      padding-bottom: 32px;
+      font-family: "Cereal", Helvetica, sans-serif;
+    }
+  }
+}
+
+// ----------
+
+.order-alert-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 881;
+  background-color: #81818199;
+}
+
+
+
+
+.showConfirm {
+  transform: translate(-50%) !important;
+}
+
+.order-confirmation-modal {
+  position: fixed;
+  top: 7%;
+  border-radius: 25px;
+  line-height: 18px;
+  left: 50%;
+  transform: translate(-50%, -500%);
+  height: 625px;
+  width: 80%;
+  max-width: 880px;
+  padding: 40px 95px;
+  background-color: #fff;
+  font-size: 17px;
+  text-align: start;
+  transition: .35s;
+  z-index: 888;
+
+
+
+  .confirm-title-container {
+    margin-bottom: 28px;
+  }
+
+  .confirmation-details {
+    display: flex;
+    flex-direction: column;
+
+
+
+    .confirm-title {
+      font-family: Cereal-bold;
+      margin-bottom: 28px;
+      margin-top: 25px;
+      letter-spacing: 1px;
+      font-size: 1.9285714286em;
+      font-weight: 600;
+    }
+
+    .confirm-text {
+      font-size: 1.0714285714em;
+      line-height: 25px;
+      font-weight: 400;
+    }
+
+  }
+
+
+
+  .reservation-details-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .trip-details-container {
+    width: 32%;
+    height: 100%;
+
+    span:nth-of-type(2) {
+      margin-top: 10px;
+    }
+
+    h1:nth-of-type(3) {
+      padding-bottom: 6px;
+    }
+
+    .reservation-details-title {
+      font-size: 1.2857142857em;
+      font-family: Cereal-bold;
+      margin-bottom: 25px;
+    }
+
+    .mini-trip-title {
+      font-size: 1.0714285714em;
+      font-family: Cereal-bold;
+      margin-bottom: 7px;
+    }
+
+    .mini-trip-detail {
+      font-size: .9285714286em;
+      font-weight: 400;
+    }
+
+    .price-details-container {
+      border-top: 1px solid #ddd;
+      padding-top: 18px;
+      gap: 9px;
+
+      .service {
+        padding-bottom: 5px;
+      }
+
+      .total-price {
+        font-weight: 600;
+        border-top: 1px solid #ddd;
+        padding-top: 15px;
+      }
+    }
+
+  }
+
+  .order-stay-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 310px;
+    box-shadow: #0000001f 0 6px 16px;
+    border-radius: 10px;
+
+    .order-stay-image {
+      border-radius: 5px;
+      margin-bottom: 8px;
+      height: 200px;
+      object-fit: cover;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .stay-detail {
+      font-size: .8571428571em;
+      margin-bottom: 5px;
+      text-align: start;
+      align-self: flex-start;
+    }
+  }
+
+  .modal-btns-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 45px;
+    height: 55px;
+    padding: 50px 0;
+    margin: auto;
+    width: 380px;
+
+    .go-back {
+      .el-button--large {
+        height: 48px;
+      }
+
+      &:hover {
+        background-color: #48484899 !important;
+
+      }
+    }
+  }
+}
+
+p.text-desc {
+  font-size: 16px;
+
+  .read-more {
+    cursor: pointer;
+    font-family: Cereal-medium;
+  }
+}
+
+.reviews-stats {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  .stats {
+    flex-basis: 50%;
+
+
+    label {
+      margin-right: auto;
+      color: black;
+
+    }
+
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5) {
+      padding-right: 107px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      padding-right: 90px;
+    }
+
+  }
+
+  .stats {
+    margin-bottom: 16px;
+    width: fit-content;
+  }
+
+  label {
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 12px;
+    margin-left: 6px;
+    font-family: Cereal-medium;
+
+  }
+
+  .el-progress-bar__outer {
+    background-color: #ddd;
+  }
+
+  .el-progress-bar__inner {
+    background-color: #222222;
+  }
+
+  .el-progress-bar__outer {
+    width: 120px;
+  }
+}
+
+
+.stay-name {
+  font-size: 1.46875rem;
+  line-height: 1.6875rem;
+}
+
+.up-info {
+  .gray {
+    color: #717171;
+  }
+}
+
+// Galerry
+.gallery-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  grid-template-rows: 230px 200px;
+  grid-gap: 8px;
+  gap: 8px;
+  padding-top: em(24px);
+
+  img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  :first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+  }
+
+  :nth-child(3) {
+    border-top-right-radius: 13px;
+  }
+
+  :nth-child(5) {
+    border-bottom-right-radius: 13px;
+  }
+}
+
+.amenity-icons {
+  height: 24px;
+}
+
+.reviews-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px 1px;
+}
+
+.review-preview-container {
+  margin-right: 100px;
+
+  .header-review {
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+
+    h3 {
+      margin: 0;
+    }
+
+    h5 {
+      margin: 0;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      color: #717171;
+    }
+  }
+}
+
+.reviews-image {
+  height: 70px;
+}
+
+// Order
+
+.order-details {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+  flex-direction: column;
+  width: 600px;
+}
+
+.order-container {
+  border: 1px solid #00000030;
+  border-radius: 13px;
+  padding: 20px;
+  width: 372px;
+  min-height: 275px;
+  margin: 50px auto 10px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+
+  .order-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 22px;
+    margin-top: 7px;
+
+
+    p {
+      &:nth-child(1) {
+        span {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  input {
+    border: none;
+    padding: 0 0;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .expand-order {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+  }
+
+  .order-data {
+    border: 1px solid rgb(0 0 0 / 32%);
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+    label {
+      font-family: Cereal-bold;
+      color: black;
+      font-size: 10px;
+    }
+
+    .date-picker {
+      display: flex;
+      justify-content: space-between;
+
+      .date-input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 11px 16px;
+
+        &:last-of-type {
+          border-left: 1px solid #00000050;
+        }
+      }
+    }
+
+    .guest-input {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      border-top: 1px solid #00000050;
+      padding: 11px 16px;
+      position: relative;
+    }
+  }
+
+  span.cost {
+    color: black;
+    font-size: 1.3em;
+  }
+
+  span.reviews {
+    color: #00000070;
+    font-size: 0.85em;
+    text-decoration: underline;
+  }
+
+
+  .btn-container {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    padding: 0 0;
+    margin: 0 0;
+    cursor: pointer;
+    border: none;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+
+    @for $i from 0 to 10 {
+      .cell:nth-child(10n + #{$i + 1}):hover~.content {
+        --positionX: #{$i};
+      }
+
+      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover~.content {
+        --positionY: #{$i};
+      }
+    }
+
+    .cell {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      --positionX: 0;
+      --positionY: 5;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border-radius: 8px;
+
+      background-image: radial-gradient(circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
+          rgb(241, 37, 75) 0%,
+          rgb(230, 30, 77) 27.5%,
+          rgb(227, 28, 95) 40%,
+          rgb(215, 4, 102) 57.5%,
+          rgb(189, 30, 89) 75%,
+          rgb(189, 30, 89) 100%);
+    }
+
+    .action-btn {
+      padding: 0 0;
+      margin: 0 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+    }
+
+    span {
+      padding: 0 0;
+      margin: 0 0;
+      color: white;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+  }
+
+  .guests-btns {
+    justify-content: space-between;
+    width: 104px;
+    color: $clr1;
+    font-weight: 400;
+    font-size: 16px;
+
+    button {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      cursor: pointer;
+      color: #717171;
+      border: 1px solid #b0b0b0;
+      background-color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin: 5px;
+    }
+  }
+
+  .guest-add {
+
+    position: relative;
+    line-height: 20px;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+    z-index: 2;
+    padding: 20px;
+
+    .guests-container {
+      .titles {
+        h5 {
+          margin: 10px 0px 0px 0px;
+          font-size: 16px;
+          font-family: Cereal-bold;
+          color: $clr1;
+
+        }
+
+      }
+
+    }
+  }
+
+  .pricing {
+    h4 {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: 100;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-weight: 100;
+      color: $clr1;
+      margin: 10px 0px 15px 0px;
+
+
+    }
+
+    p {
+      font-size: 16px;
+      color: $clr1;
+      font-family: Cereal-bold;
+      padding-top: 16px;
+      margin-top: 8px;
+      border-top: 1px solid #ddd;
+    }
+  }
+
+  .close-btn {
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 5px;
+
+    button {
+      font-size: 16px;
+      font-family: Cereal-bold;
+      color: $clr1;
+      padding: 10px;
+      border-radius: 8px;
+
+      &:hover {
+        border: none !important;
+        background: #F7F7F7;
+        color: #000000;
+      }
+    }
+  }
+}
+
+
+.btn-container {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding: 0 0;
+  margin: 0 0;
+  cursor: pointer;
+  border: none;
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+
+  @for $i from 0 to 10 {
+    .cell:nth-child(10n + #{$i + 1}):hover~.content {
+      --positionX: #{$i};
+    }
+
+    .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover~.content {
+      --positionY: #{$i};
+    }
+  }
+
+  .cell {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .content {
+    --positionX: 0;
+    --positionY: 5;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 8px;
+
+    background-image: radial-gradient(circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
+        rgb(241, 37, 75) 0%,
+        rgb(230, 30, 77) 27.5%,
+        rgb(227, 28, 95) 40%,
+        rgb(215, 4, 102) 57.5%,
+        rgb(189, 30, 89) 75%,
+        rgb(189, 30, 89) 100%);
+  }
+
+  .action-btn {
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+
+  span {
+    padding: 0 0;
+    margin: 0 0;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+}

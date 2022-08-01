@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Cereal';
+}
+
+body {
+  font-size: 'Cereal';
+  margin: 0;
+  padding: 0;
+}
+div {
+  color: $clr1;
+}
+h1,
+h2,
+h3 {
+  color: $clr1;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: em(26px);
+  font-family: 'Cereal-medium', Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: em(24px);
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: em(24px);
+}
+
+a,
+button,
+.favorite {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  height: fit-content;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  text-align: inherit;
+}
+
+.stared::before {
+  content: '\e838';
+  font-family: 'Material Icons';
+}
+.stared {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3803921569);
+  width: 100vw;
+  height: 10000vh;
+  position: absolute;
+  z-index: 3;
+  transition: all 200ms ease-out;
+  overflow: auto;
+}
